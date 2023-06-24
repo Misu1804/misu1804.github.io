@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morganic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="/assets/css/Giohang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img src="../img/logo.png" alt="">
+            <div class="search">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="headphone">
+                <a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>Hỗ trợ khách hàng</a>
+            </div>
+            <div class="info">
+                <div class="email">
+                    <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    mai thi haily1804@gmail.com</a>
+                </div>
+                <div class="phone">
+                    <a href=""><i class="fa fa-phone" aria-hidden="true"></i>
+                    Hotline: 0123.456.189</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="nav">
+            <ul class="menu">
+                <li><a href="/index.html">Trang chủ</a></li>
+                <li><a href="../html/GioiThieu.html">Giới thiệu</a></li>
+                <li><a href="">Sản phẩm</a>
+                  <ul class="submenu">
+                    <li><a href="../html/spDa.html">Chăm sóc da</a></li>
+                    <li><a href="../html/spToc.html">Chăm sóc tóc</a></li>
+                  </ul>
+                </li>
+                <li><a href="../html/Tintuc.html">Tin tức</a></li>
+                <li><a href="../html/LienHe.html">Liên hệ</a></li>
+                <li class="icon">
+                  <a href="../html/GiohangTrong.html">
+                  <i class="fa fa-shopping-cart iconcart" aria-hidden="true"></i></a>
+                </li>
+                <li class="icon">
+                  <a href="../html/DangKy.html">
+                    <i class="fa fa-user" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+
+     
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 bangSP">
+                    <table style="border-spacing: 10px">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng</th>
+                        </tr>
+                        <tr>
+                            <td class="SP">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </a>
+                                  
+                                <a href="">
+                                    <img src="http://mypham07.giaodienwebmau.com.vn/wp-content/uploads/2019/07/S%E1%BB%AFa-T%E1%BA%AFm-D%C6%B0%E1%BB%A1ng-%E1%BA%A8m-Tr%E1%BA%AFng-Da-Hatomugi-600ml-M%E1%BA%ABu-M%E1%BB%9Bi.jpg" alt="">
+                                    <p>Sữa Tắm Dưỡng Ẩm Trắng Da Hatomugi 600ml [Mẫu Mới]</p>
+                                </a>
+                            </td>
+                            <td>230.000₫</td>
+                            <td class="rongsoluong">
+                                <div class="soluong">
+                                    <button class="tru" onclick="xuliTru()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                      </svg>
+                                    </button>
+            
+                                    <input type="text" value="1" id="soSP">
+            
+                                    <button class="cong" onclick="xuliCong()">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                      </svg>
+                                    </button>
+                                 </div>
+                            </td>
+                            <td>230.000₫</td>
+                        </tr>
+                    </table>
+                    
+                    <a href="">
+                        <button class="muatiep"> 
+                            <a href="../html/spDa.html">Tiếp tục mua sắm</a>
+                        </button>
+                    </a> 
+
+                    <a href="">
+                        <button class="capnhatgio">Cập nhật giỏ hàng</button>
+                    </a>
+                </div>
+                <div class="col-md-4 tinhtong">
+                    <table>
+                        <tr>
+                            <td><h3><b>Cộng giỏ hàng</b></h3></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tạm tính</td>
+                            <td>230.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng</td>
+                            <td>230.000đ</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <b>Phiếu ưu đãi</b>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" placeholder="Nhập mã ưu đãi">
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="uudai">Áp dụng</button>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="thanhtoan">Tiến hành thanh toán</button>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+     
+        <div id="footer">
+            <div class="borderFooter"></div>
+            <ul class="mainFooter">
+              <li class="infologo">
+                  <img src="../img/logo.png" alt="">
+                  <p class="infologo">Trang Phân Phối Hàng Đầu Việt Nam - <br> Nơi Bán Mỹ Phẩm Chính Hãng 100%.</p>
+              </li>
+              <li>
+                <b>MorganicCosmetic</b>
+                <p>
+                  Địa chỉ: Gia Lập - Gia Viễn - Ninh Bình <br>
+                  Điện thoại: 0911.233.133 <br>
+                  Email: info.demo@gmail.com <br> 
+                  Website: myphamdemo.com <br>
+                </p>
+                
+              </li>
+              <li>
+                <b>Thông tin</b>
+                <p>
+                  <a href="">Về chúng tôi</a> <br>
+                  <a href="">Chính sách mua hàng</a> <br>
+                  <a href="">Theo dõi giỏ hàng</a> <br>
+  
+                </p>
+              </li>
+              <li>
+                <b>Liên hệ với chúng tôi</b>
+                <p>www.myWebsite.com <br>
+                  (+84) 347825JQK <br>
+                  info@email.com <br>
+                  12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP. Hồ Chí Minh</p>
+              </li>
+            </ul>
+            <div class="boxFooter">
+              <p>Copyright 2023 © KT Cosmetic. Thiết kế website bởi Hải Lý</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script>
+        // Làm cộng trừ số lượng sản phẩm 
+        let soluongSP = document.getElementById('soSP');
+        let soSP = soluongSP.value;
+
+        let capnhatlai = (soSP) => {
+            soluongSP.value = soSP; // gán lại sau khi cộng hoặc trừ
+        }
+
+        // Hàm xử lí cộng
+        let xuliCong = () => {
+            soSP++;
+            capnhatlai(soSP);
+        }
+
+        // Hàm xử lí trừ
+        let xuliTru = () => {
+          if(soSP >1)
+            soSP--;
+          capnhatlai(soSP);
+        }
+
+        // sự kiện nhập để tránh nhập văn bản
+        soluongSP.addEventListener('input', () => {
+            soSP = soluongSP.value;
+            soSP = parseInt(soSP); //chuyển thành số nguyên
+            // ktra nhập vào có phải NaN(1 giá trị ko hợp lệ) hoặ 1 số = 0 hay ko
+            soSP = (isNaN(soSP)||soSP==0)?1:soSP;
+            capnhatlai(soSP);
+        });
+        
+    </script>
+</body>
+</html>
