@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morganic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="/assets/css/GiohangTrong.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img src="../img/logo.png" alt="">
+            <div class="search">
+                <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="headphone">
+                <a href="#"><i class="fa fa-headphones" aria-hidden="true"></i> Hỗ trợ khách hàng</a>
+            </div>
+            <div class="info">
+                <div class="email">
+                    <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    mai thi haily1804@gmail.com</a>
+                </div>
+                <div class="phone">
+                    <a href=""><i class="fa fa-phone" aria-hidden="true"></i>
+                    Hotline: 0123.456.189</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="nav">
+            <ul class="menu">
+              <li><a href="/index.html">Trang chủ</a></li>
+              <li><a href="../html/GioiThieu.html">Giới thiệu</a></li>
+              <li><a href="">Sản phẩm</a>
+                <ul class="submenu">
+                  <li><a href="../html/spDa.html">Chăm sóc da</a></li>
+                  <li><a href="../html/spToc.html">Chăm sóc tóc</a></li>
+                </ul>
+              </li>
+              <li><a href="../html/Tintuc.html">Tin tức</a></li>
+              <li><a href="../html/LienHe.html">Liên hệ</a></li>
+              <li class="icon">
+                <a href="../html/GiohangTrong.html">
+                <i class="fa fa-shopping-cart iconcart" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon">
+                <a href="../html/DangKy.html">
+                  <i class="fa fa-user" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+        </div>
+
+     
+        <div class="container">
+            <div class="GiohangTrong">
+                <img src="https://haily1804.github.io/assets/img/card.gif" alt="">
+            </div>
+            <h1>Không có sản phẩm nào trong giỏ hàng</h1>     
+            <div class="ttmua">
+                <button><a href="../html/spDa.html">Tiếp tục mua sắm</a></button>
+            </div>
+        </div>
+     
+        <div id="footer">
+          <div class="borderFooter"></div>
+          <ul class="mainFooter">
+            <li class="infologo">
+                <img src="../img/logo.png" alt="">
+                <p class="infologo">Trang Phân Phối Hàng Đầu Việt Nam - <br> Nơi Bán Mỹ Phẩm Chính Hãng 100%.</p>
+            </li>
+            <li>
+              <b>MorganicCosmetic</b>
+              <p>
+                Địa chỉ: Gia Lập - Gia Viễn - Ninh Bình <br>
+                Điện thoại: 0911.233.133 <br>
+                Email: info.demo@gmail.com <br> 
+                Website: myphamdemo.com <br>
+              </p>
+              
+            </li>
+            <li>
+              <b>Thông tin</b>
+              <p>
+                <a href="">Về chúng tôi</a> <br>
+                <a href="">Chính sách mua hàng</a> <br>
+                <a href="">Theo dõi giỏ hàng</a> <br>
+
+              </p>
+            </li>
+            <li>
+              <b>Liên hệ với chúng tôi</b>
+              <p>www.myWebsite.com <br>
+                (+84) 347825JQK <br>
+                info@email.com <br>
+                12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, TP. Hồ Chí Minh</p>
+            </li>
+          </ul>
+          <div class="boxFooter">
+            <p>Copyright 2023 © KT Cosmetic. Thiết kế website bởi Hải Lý</p>
+          </div>
+      </div>
+    </div>
+
+
+    
+    <script>
+        // Làm cộng trừ số lượng sản phẩm 
+        let soluongSP = document.getElementById('soSP');
+        let soSP = soluongSP.value;
+
+        let capnhatlai = (soSP) => {
+            soluongSP.value = soSP; // gán lại sau khi cộng hoặc trừ
+        }
+
+        // Hàm xử lí cộng
+        let xuliCong = () => {
+            soSP++;
+            capnhatlai(soSP);
+        }
+
+        // Hàm xử lí trừ
+        let xuliTru = () => {
+          if(soSP >1)
+            soSP--;
+          capnhatlai(soSP);
+        }
+
+        // sự kiện nhập để tránh nhập văn bản
+        soluongSP.addEventListener('input', () => {
+            soSP = soluongSP.value;
+            soSP = parseInt(soSP); //chuyển thành số nguyên
+            // ktra nhập vào có phải NaN(1 giá trị ko hợp lệ) hoặ 1 số = 0 hay ko
+            soSP = (isNaN(soSP)||soSP==0)?1:soSP;
+            capnhatlai(soSP);
+        });
+        
+    </script>
+</body>
+</html>

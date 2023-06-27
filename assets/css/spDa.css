@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    width: 1200px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+#header img{
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    float: left;
+}
+
+.search input{
+   width: 400px; 
+   border-radius: 20px;
+   padding: 10px;
+   border: solid 2px #61C73C;
+}
+
+.search{
+    position: relative;
+    float: left;
+    margin: 25px 30px 0px 55px;;
+}
+
+.headphone{
+    float: left;
+}
+
+.search i{
+    position: absolute;
+    left: 370px;
+    top: 10px;
+    font-size: 20px;
+    color: #61C73C;
+}
+
+.headphone i{
+    font-size: 25px;
+    color: #61C73C;
+    padding: 7px;
+    border: solid 2px #61C73C;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.headphone{
+    text-decoration: none;
+    margin: 0px 35px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.info{
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.info i{
+    color: #61C73C;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Menu */
+#nav{
+    width: 100%;
+    height: 55px;
+    background-color: #00943E;
+}
+.menu{
+    width: 930px;
+    height: 55px;
+    margin: 0px auto;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu > li {
+    float: left;
+    width: 150px;
+    text-align: center;
+    background-color:#00943E;
+    padding: 15px 5px;
+    position: relative;
+}
+.menu > li:hover {
+    background-color: #61C73C;
+    /* Để chuột đổi thành hình bàn tay */
+    cursor: pointer;
+}
+
+.menu>li:hover .submenu{
+    display: block;
+}
+
+li.icon{
+    width: 90px;
+}
+
+/* submenu */
+.submenu{
+    width: 100%;
+    z-index: 2;
+    background-color: #00943E;
+}
+ul li ul{
+    position: absolute;
+    top:55px;
+    left: 0px;
+}
+
+.submenu li{
+    padding: 15px 5px;
+}
+
+.submenu li:hover{
+    background-color: #61C73C;
+}
+
+ul.submenu{
+    display: none;
+}
+
+/* Hết menu */
+
+/* Slider */
+
+.container-fluid{
+    clear:both;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container-fluid img{
+    padding: 0px;
+    width: 100%;
+    height: 500px;
+}
+
+/* Content */
+#content{
+    width: 1300px;
+    margin: 0px auto;
+}
+
+.spChamsocda{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 60px;
+}
+
+.Thuonghieu{
+    width: 100%;
+    height: 300px;
+}
+
+.Thuonghieu img{
+    width: 216px;
+}
+
+.spChamsocda>p , .spLamdep>p, .spToc>p, .Tintuc >p, .Thuonghieu > p{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    color: #00943E;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.borderSp{
+    border: solid 1px #EBEBE8;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.sp{
+    width: 24%;
+    height: 360px;
+    margin-left: 1%;
+    background-color: #F6F6F3;
+    border-radius: 10px;
+    float: left;
+}
+
+.sp img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+.sp > p{
+    text-align: center;
+}
+.gia{
+    color: red;
+    font-size: 18px;
+}
+
+img.imgTT{
+    height: 180px;
+}
+
+.vbTT{
+    justify-content: center;
+    padding: 5px 15px;
+}
+
+/* Footer */
+
+#footer{
+    width: 100%;
+}
+
+.mainFooter{
+    height: 210px;
+}
+.borderFooter{
+    width: 100%;
+    margin-bottom: 15px;
+    border: solid 1px #EAEBE5;
+}
+
+ul.mainFooter li{
+    float: left;
+    padding:  40px 65px;
+    font-size: 17px;
+}
+
+.boxFooter {
+    clear: both;
+    width: 100%;
+    height: 40px;
+    background-color: #3F3F3E;
+    color: #A09B97;
+    text-align: center;
+    line-height: 40px;
+}
+
+p.infologo{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+li.infologo{
+    padding: 20px 65px !important;
+}
