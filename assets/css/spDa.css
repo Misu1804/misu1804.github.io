@@ -155,7 +155,7 @@ ul.submenu{
 /* Content */
 #content{
     width: 1300px;
-    margin: 0px auto;
+    margin: 50px auto;
 }
 
 .spChamsocda{
@@ -192,11 +192,12 @@ ul.submenu{
 
 .sp{
     width: 24%;
-    height: 360px;
+    height: 380px;
     margin-left: 1%;
     background-color: #F6F6F3;
     border-radius: 10px;
     float: left;
+    margin-bottom: 40px;
 }
 
 .sp img{
@@ -206,6 +207,7 @@ ul.submenu{
 }
 .sp > p{
     text-align: center;
+    margin-top: 10px;
 }
 .gia{
     color: red;

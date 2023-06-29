@@ -153,13 +153,12 @@ ul.submenu{
 /* Content */
 #content{
     width: 1300px;
-    margin: 0px auto;
+    margin: 50px auto;
 }
 
 .spBanchay, .spLamdep, .spToc, .Tintuc{
     width: 100%;
-    height: 450px;
-    margin-bottom: 60px;
+    height: 500px;
 }
 
 .Thuonghieu{
@@ -220,6 +219,23 @@ img.imgTT{
     justify-content: center;
     padding: 5px 15px;
 }
+
+.xemthemSP{
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.xemthemSP a{
+    color: #61C73C;
+}
+
+.xemthemSP a i{
+    padding: 5px;
+}
+
 
 /* Footer */
 
