@@ -236,7 +236,7 @@ img.imgTT{
 
 ul.mainFooter li{
     float: left;
-    padding:  40px 40px;
+    padding:  40px 30px;
     font-size: 17px;
 }
 
@@ -256,5 +256,11 @@ p.infologo{
 }
 
 li.infologo{
-    padding: 20px 65px !important;
+    padding: 0px 65px !important;
 }
+
+.mainFooter li b {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
