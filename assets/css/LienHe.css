@@ -3,8 +3,6 @@
     margin: 0;
 }
 
-
-
 /* Container */
 .container{
     height: 900px;
@@ -26,11 +24,11 @@
 /* Mobile */
 @media only screen and (max-width: 46.1875em){
     .container{
-        width: 300px;
+        width: 100%;
         height: 1500px;
     }
     .ThongtinLH{
-        height: 550px;
+        height: 500px;
     }
 }
 

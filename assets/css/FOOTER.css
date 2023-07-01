@@ -45,15 +45,14 @@ li.infologo{
 
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em){
-
     #footer{
-        width: 300px;
+        width: 100%;
     }
     li.infologo {
         padding: 0px 0px !important;
     }
     ul.mainFooter li {
-        margin: 0px 15px;
+        margin-left: 5%;
         font-size: 15px;
     }
     p.infologo {
@@ -66,7 +65,7 @@ li.infologo{
         height: 100px;
     }
     ul.mainFooter li {
-        padding: 10px 15px;
+        padding: 5% 5%;
     }
 
 }

@@ -57,14 +57,25 @@ h2{
 
 /* Mobile */
 @media only screen and (max-width: 46.1875em){
+    #wrapper{
+        width: 100%;
+    }
     .form{
         width: 100%;
     }
-    .form input{
-        width: 360px;
+    .form input {
+        width: 80%;
+        margin: 3% 10%;
+        padding: 5% 5%;
+        border: none;
+        border-bottom: solid 1px black;
+        font-size: 17px;
     }
-    .dangky button{
-        left: 130px;
+    .dangky button {
+        width: 45%;
+        height: 50%;
+        top: 5%;
+        left: 30%;
     }
 }
 

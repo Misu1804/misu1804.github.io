@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -38,7 +37,29 @@
     color: aliceblue;
 }
 
-.container h1{
+.container h2{
     text-align: center;
 }
 
+/* Mobile */
+@media only screen and (max-width: 46.1875em){
+    .container{
+        width: 100%;
+        height: 600px;
+    }
+    .GiohangTrong img {
+        width: 100%;
+        margin-top: 20%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .GiohangTrong{
+        height: 255px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    
+}
