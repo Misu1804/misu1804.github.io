@@ -42,3 +42,36 @@ li.infologo{
     font-size: 20px;
     padding-top: 15px;
 }
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em){
+
+    #footer{
+        width: 300px;
+    }
+    li.infologo {
+        padding: 0px 0px !important;
+    }
+    ul.mainFooter li {
+        margin: 0px 15px;
+        font-size: 15px;
+    }
+    p.infologo {
+        padding:10px 0px 0px 15px;
+        font-size: 14px;
+    }
+
+    .infologo img{
+        width: 250px;
+        height: 100px;
+    }
+    ul.mainFooter li {
+        padding: 10px 15px;
+    }
+
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    
+}
