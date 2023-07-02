@@ -90,6 +90,6 @@
 /* Tablet */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
     #content{
-        width: 800px;
+        width: 100%;
     }
 }
