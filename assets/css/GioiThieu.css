@@ -84,7 +84,10 @@
     }
     .borderAvatar {
         height: 125px;
+    }.Tacgia > p{
+        padding-top: 70px;
     }
+
 }
 
 /* Tablet */
@@ -92,4 +95,5 @@
     #content{
         width: 100%;
     }
+    
 }

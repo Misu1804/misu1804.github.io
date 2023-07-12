@@ -106,10 +106,12 @@ ul{
     background-color: #61C73C;
     /* Để chuột đổi thành hình bàn tay */
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .menu>li:hover .submenu{
     display: block;
+    transition: all 0.5s;
 }
 
 li.icon{
@@ -134,10 +136,15 @@ ul li ul{
 
 .submenu li:hover{
     background-color: #61C73C;
+    transition: all 0.5s;;
 }
 
 ul.submenu{
     display: none;
+}
+
+.menu{
+    display: flex;
 }
 
 /* Hết menu */
@@ -154,6 +161,10 @@ ul.submenu{
     padding: 0px;
 }
 
+#res-menu{
+    display: none;
+}
+
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em){
     #header{
@@ -164,12 +175,36 @@ ul.submenu{
         height: 100%;
         padding: 5%;
     }
-    .search,.headphone,.info,.menu{
+    .search,.headphone,.info{
         display: none;
     }
     #nav{
         height: 30px;
     }
+
+    /* Responsive menu */
+    .menu{
+        width: 100%;
+       flex-direction: column;
+    }
+    .menu > li{
+        width: 100%;
+    }
+    li.icon {
+        width: 100%;
+    }
+    #res-menu{
+        display: block;
+        background-color: #353b48;
+        color: aliceblue;
+        text-align: right;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #nav{
+        display: none;
+    }
+    /* Hết res-menu */
 }
 
 /* Tablet: width >= 740px and width < 1024px */

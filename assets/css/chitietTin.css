@@ -15,6 +15,7 @@
 
 .noidungTin img{
     margin: 15px auto;
+    width: 100%;
 }
 
 
@@ -94,6 +95,7 @@ img.imgTT{
     .container{
         width: 100%;
         height: 100%;
+        margin-top: 50px;
     }
     .noidungTin img {
         margin: 5% auto;
