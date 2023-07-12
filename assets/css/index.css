@@ -277,6 +277,14 @@ li.infologo{
     padding: 0px 65px !important;
 }
 
+#res-menu{
+    display: none;
+}
+
+.menu{
+    display: flex !important;
+}
+
 /* Mobile: width < 740px */
 @media only screen and (max-width: 46.1875em){
     #header{
@@ -301,11 +309,33 @@ li.infologo{
     .spBanchay, .spLamdep, .spToc, .Tintuc{
         height: 600px;
     }
-    
-
     #footer{
         width: 300px;
     }
+
+    /* Responsive menu */
+    .menu{
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu > li{
+        width: 100%;
+    }
+    li.icon {
+        width: 100%;
+    }
+    #res-menu{
+        display: block;
+        background-color: #353b48;
+        color: aliceblue;
+        text-align: right;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #nav{
+        display: none;
+    }
+    /* Hết res-menu */
 }
 
 /* Tablet: width >= 740px and width < 1024px */

@@ -143,8 +143,9 @@ ul.submenu{
     display: none;
 }
 
+
 .menu{
-    display: flex;
+    display: flex; /* res-menu */
 }
 
 /* Hết menu */
@@ -202,7 +203,7 @@ ul.submenu{
         font-size: 20px;
     }
     #nav{
-        display: none;
+        display: none; /* res-menu */
     }
     /* Hết res-menu */
 }
