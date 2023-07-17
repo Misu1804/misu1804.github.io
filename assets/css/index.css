@@ -152,7 +152,7 @@ ul.submenu{
 
 /* Content */
 #content{
-    width: 1300px;
+    width: 1500px;
     margin: 50px auto;
 }
 
@@ -187,16 +187,21 @@ ul.submenu{
     margin-bottom: 15px;
 }
 
-.sp{
-    width: 24%;
+.sp, .tin{
+    width: 95% !important;
     height: 370px;
-    margin-left: 1%;
-    background-color: #F6F6F3;
-    border-radius: 10px;
+    border-radius: 20px;
     float: left;
+    background-color: #EBEBE8;
+    margin-left: 2%;
 }
 
-.sp img{
+.tin{
+    width: 24% !important;
+    margin-left: 1% !important;
+}
+
+.sp img, .tin img{
     width: 100%;
     height: 300px;
     border-radius: 20px;
@@ -234,6 +239,10 @@ img.imgTT{
 
 .xemthemSP a i{
     padding: 5px;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #cccc !important;
 }
 
 
@@ -304,13 +313,66 @@ li.infologo{
 
     #content{
         width: 300px;
+        height:1350px ;
     }
 
     .spBanchay, .spLamdep, .spToc, .Tintuc{
-        height: 600px;
+        height: 250px;
     }
     #footer{
         width: 300px;
+    }
+    
+    .infologo img{
+        width: 170px;
+        height: 70px;
+    }
+
+    .container-fluid img {
+        height: 120px !important;
+    }
+
+    .sanpham {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .sp img, .tin img{
+        height: 100px;
+    }
+
+    .sp, .tin{
+        height: 185px;
+    }
+
+    p.tensp{
+        font-size: 10px;
+    }
+
+    p.gia{
+        font-size: 11px;
+    }
+
+    .spBanchay>p, .spLamdep>p, .spToc>p, .Tintuc >p, .Thuonghieu > p {
+        font-size: 17px;
+    }
+
+    .vbTT p{
+        font-size: 6px !important;
+    }
+
+    .tin{
+        width: 45% !important;
+        height: 200px;
+        margin: 2% 4%;
+    }
+
+    li.infologo{
+        padding: 0px 28px !important;
+    }
+
+    ul.mainFooter li {
+        padding: 15px 30px;
     }
 
     /* Responsive menu */
@@ -332,9 +394,11 @@ li.infologo{
         padding: 10px;
         font-size: 20px;
     }
+    
     #nav{
         display: none;
     }
+    
     /* Hết res-menu */
 }
 

@@ -124,8 +124,32 @@ li.infologo{
 
 /* Mobile */
 @media only screen and (max-width: 46.1875em){
-    .slider{
+    .slider img{
+        /* margin-top: 50px; */
         display: none;
+    }
+    #content{
+        width: 100%;
+        height: 1200px;
+    }
+    .sp{
+        width: 45%;
+        margin: 0 2.5%;
+        height: 260px;
+        margin-bottom: 20px;
+    }
+    .sp img{
+        height: 150px;
+    }
+    .Thuonghieu{
+        display: none;
+    }
+    .spChamsocda > p{
+        font-size: 17px;
+        padding-top: 20px;
+    }
+    .sp a p{
+        font-size: 15px;
     }
 }
 
