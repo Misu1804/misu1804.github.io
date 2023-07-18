@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script>
+    <!-- <script>
       $(document).ready(function() {
           $('#res-menu').click(function() {
               $('#nav').slideToggle();
           });
       })
-    </script>
+    </script> -->
 </head>
 <body>
     <div id="wrapper">
@@ -46,9 +46,11 @@
             </div>
         </div>
 
-        <div id="res-menu">
+        <label for="nav-mobile-input" id="res-menu">
           <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+        </label>
+        <input type="checkbox" class="nav-input" id="nav-mobile-input">
+        <label for="nav-mobile-input" class="overlay"></label>
         <!-- Menu -->
         <div id="nav">
             <ul class="menu">
@@ -72,6 +74,33 @@
                 </li>
             </ul>
         </div>
+
+      
+        <div id="nav-mobile">
+          <ul class="menu-mobile">
+              <label for="nav-mobile-input" class="close">
+                  <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+              </label>
+              <li><a href="/index.html">Trang chủ</a></li>
+              <li><a href="./assets/html/GioiThieu.html">Giới thiệu</a></li>
+              <li><a href="./assets/html/spDa.html">Sản phẩm</a>
+                <ul class="submenu">
+                  <li><a href="./assets/html/spDa.html">Chăm sóc da</a></li>
+                  <li><a href="./assets/html/spToc.html">Chăm sóc tóc</a></li>
+                </ul>
+              </li>
+              <li><a href="./assets/html/Tintuc.html">Tin tức</a></li>
+              <li><a href="./assets/html/LienHe.html">Liên hệ</a></li>
+              <li class="icon">
+                <a href="./assets/html/GiohangTrong.html">
+                <i class="fa fa-shopping-cart iconcart" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon">
+                <a href="./assets/html/DangKy.html">
+                  <i class="fa fa-user" aria-hidden="true"></i></a>
+              </li>
+          </ul>
+      </div>
 
         <!-- Slider -->
         <div class="container-fluid"> 
