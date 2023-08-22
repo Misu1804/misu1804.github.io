@@ -490,6 +490,37 @@ input.nav-input{
         opacity: 1;
     }
 
+    .menu-mobile li{
+        position: relative;
+    }
+
+    ul li:hover .submenu{
+        display: block;
+    }
+
+    /* submenu */
+    .submenu{
+        width: 100%;
+        background-color: #00943E;
+    }
+    ul li ul{
+        position: absolute;
+        top:50px;
+        left: 10px;
+    }
+
+    .submenu li{
+        padding: 15px 5px;
+    }
+
+    .submenu li a{
+        color: #fff;
+    }
+
+    ul.submenu{
+        display: none;
+    }
+
     /* Hết res-menu */
 }
 
