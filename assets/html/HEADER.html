@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="../css/HEADER.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>
-        $(document).ready(function() {
-            $('#res-menu').click(function() {
-                $('#nav').slideToggle();
-            });
-        })
-    </script>
 </head>
 <body>
     <div id="header">
@@ -41,27 +34,52 @@
         </div>
     </div>
     
-    <div id="res-menu">
+    <label for="nav-mobile-input" id="res-menu">
         <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
+    </label>
+    <input type="checkbox" class="nav-input" id="nav-mobile-input">
+    <label for="nav-mobile-input" class="overlay"></label>
+    <!-- Menu -->
     <div id="nav">
         <ul class="menu">
             <li><a href="/index.html">Trang chủ</a></li>
-            <li><a href="./GioiThieu.html">Giới thiệu</a></li>
+            <li><a href="/assets/html/GioiThieu.html">Giới thiệu</a></li>
             <li>Sản phẩm
               <ul class="submenu">
-                <li><a href="./spDa.html">Chăm sóc da</a></li>
-                <li><a href="./spToc.html">Chăm sóc tóc</a></li>
+                <li><a href="/assets/html/spDa.html">Chăm sóc da</a></li>
+                <li><a href="/assets/html/spToc.html">Chăm sóc tóc</a></li>
               </ul>
             </li>
-            <li><a href="./Tintuc.html">Tin tức</a></li>
-            <li><a href="./LienHe.html">Liên hệ</a></li>
+            <li><a href="/assets/html/Tintuc.html">Tin tức</a></li>
+            <li><a href="/assets/html/LienHe.html">Liên hệ</a></li>
             <li class="icon">
-              <a href="./GiohangTrong.html">
+              <a href="/assets/html/GiohangTrong.html">
               <i class="fa fa-shopping-cart iconcart" aria-hidden="true"></i></a>
             </li>
             <li class="icon">
-              <a href="./DangKy.html">
+              <a href="/assets/html/DangKy.html">
+                <i class="fa fa-user" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="nav-mobile">
+        <ul class="menu-mobile">
+            <label for="nav-mobile-input" class="close">
+                <a href=""><i class="fa fa-times" aria-hidden="true"></i></a>
+            </label>
+            <li><a href="/index.html">Trang chủ</a></li>
+            <li><a href="/assets/html/GioiThieu.html">Giới thiệu</a></li>
+            <li><a href="/assets/html/spDa.html">Sản phẩm cho da</a></li>
+            <li><a href="/assets/html/spToc.html">Sản phẩm cho tóc</a></li>
+            <li><a href="/assets/html/Tintuc.html">Tin tức</a></li>
+            <li><a href="/assets/html/LienHe.html">Liên hệ</a></li>
+            <li class="icon">
+              <a href="/assets/html/GiohangTrong.html">
+              <i class="fa fa-shopping-cart iconcart" aria-hidden="true"></i></a>
+            </li>
+            <li class="icon">
+              <a href="/assets/html/DangKy.html">
                 <i class="fa fa-user" aria-hidden="true"></i></a>
             </li>
         </ul>

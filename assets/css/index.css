@@ -102,10 +102,12 @@ ul{
     background-color: #61C73C;
     /* Để chuột đổi thành hình bàn tay */
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .menu>li:hover .submenu{
     display: block;
+    transition: all 0.5s;
 }
 
 li.icon{
@@ -130,6 +132,7 @@ ul li ul{
 
 .submenu li:hover{
     background-color: #61C73C;
+    transition: all 0.5s;
 }
 
 ul.submenu{
@@ -423,7 +426,7 @@ input.nav-input{
         top: 60px;
         right: 0;
         bottom: 0;
-        width: 70%;
+        width: 60%;
         background-color: #00943E;
         z-index: 2;
     }
