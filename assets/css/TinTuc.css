@@ -50,6 +50,10 @@
     justify-content: center;
 }
 
+.Tinmoi a, .Tintuc a{
+    color: black;
+}
+
 
 /* Mobile */
 @media only screen and (max-width: 46.1875em){
